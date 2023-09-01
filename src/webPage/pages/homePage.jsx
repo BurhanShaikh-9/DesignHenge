@@ -3,9 +3,37 @@ import { Container } from 'react-bootstrap'
 import heroImage from '../../assets/images/heroSectionBackground.png'
 import heroImageMain from '../../assets/images/heroSectionImage.png'
 import section2Img1 from '../../assets/images/section2Img1.png'
+import { CarouselComponent } from '../component/carouselComponent'
+import { CarouselItem } from '../component/carouselItem'
+
 
 
 export const HomePage = () => {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    };
+
     return (
         <React.Fragment>
             <section className="homePageMain">
@@ -53,6 +81,19 @@ export const HomePage = () => {
                 </Container>
             </section>
 
+            <section className='section3'>
+
+                <CarouselComponent>
+
+
+                    <CarouselItem />
+                    <CarouselItem />
+                    <CarouselItem />
+                    <CarouselItem />
+                    <CarouselItem />
+
+                </CarouselComponent>
+            </section>
 
         </React.Fragment>
     )
