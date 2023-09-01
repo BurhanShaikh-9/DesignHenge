@@ -1,0 +1,378 @@
+:root {
+  --mainColor: #7ac118;
+  --heroSectionColor: #eaf2e1;
+}
+
+
+@font-face {
+  font-family: 'MyriadRegular';
+  src: url('/src/assets/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GothamBlack';
+  src: url('/src/assets/fonts/Gotham-Black.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('/src/assets/fonts/GothamBook.ttf');
+}
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('/src/assets/fonts/GothamMedium.ttf');
+}
+
+body {
+  font-family: 'GothamBook' !important;
+}
+
+.themeBtn {
+  background-color: var(--mainColor);
+  padding: 15px 58px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.mobileNavBar {
+  flex-direction: column;
+}
+
+.mobHeaderMain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobileHeader {
+  margin: 20px 0;
+  display: none
+}
+
+.mobileHeader .logoLeftMain img {
+  width: 195px;
+}
+
+.toggleOffcanvas {
+  background-color: var(--mainColor);
+  color: white;
+  border: none;
+  padding: 0 10px 3px 10px;
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+.mobileNavBar a {
+  color: black;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.mobileNavBar a:hover {
+  background-color: var(--mainColor);
+  color: white;
+}
+
+.desktopTopHeader {
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  align-items: center;
+  height: 40px;
+}
+
+.desktopTopHeader p {
+  margin-bottom: 0;
+}
+
+.upperHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+}
+
+.upperHeader .rightMenu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 20px;
+}
+
+.searchElement {
+  border: 1px solid rgb(214, 214, 214);
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+  max-width: 540px;
+  height: 50px;
+}
+
+.searchElement button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--mainColor);
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 115px;
+}
+
+.searchElement input {
+  border: none;
+  height: 100%;
+  outline: 0;
+  width: 100%;
+}
+
+.cartElementInner {
+  position: relative;
+  background-color: #f3f9ea;
+  border-radius: 50%;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.userElement {
+  background-color: #f3f9ea;
+  border-radius: 50%;
+  display: flex;
+  width: 55px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartElementInner .itemCounterElemnt {
+  position: absolute;
+  background-color: var(--mainColor);
+  color: white;
+  border-radius: 50%;
+  padding: 3px 5px;
+  top: 2px;
+  right: 3px;
+  font-size: 12px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.lowerHeader {
+  margin: 20px 0;
+}
+
+.lowerHeader nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lowerHeader nav ul {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  list-style: none;
+  gap: 25px;
+  display: flex;
+}
+
+.lowerHeader nav ul+ul {
+  gap: 37px;
+  margin-right: 10px;
+}
+
+.homePageMain {
+  background-image: url(/src/assets/images/heroBackroundImg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 650px;
+  background-color: var(--heroSectionColor);
+}
+
+.heroHeading1 {
+  color: var(--mainColor);
+  font-size: 70px;
+  padding: 0;
+  margin: 0;
+  font-family: 'GothamBlack';
+  line-height: 1;
+
+}
+
+.heroHeading2 {
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-size: 70px;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.divder {
+  background-color: var(--mainColor);
+  height: 2px;
+  width: 230px;
+  margin: 10px 0;
+}
+
+.homePageInner {
+  display: flex;
+  padding: 120px 0;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.homeImageMain {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* width: 700px; */
+}
+
+.homeLeft,
+.homeRight {
+  width: 50%;
+}
+
+.imageBack {
+  position: absolute;
+  width: 685px;
+  z-index: 0;
+  top: -45px;
+  right: 0;
+  mix-blend-mode: multiply;
+}
+
+.imageFront {
+  position: absolute;
+  width: 470px;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+
+.homePara {
+  margin: 20px 0 30px 0;
+}
+.section2{
+  position: relative;
+}
+
+.section2Absolute{
+  height: 100px;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+/* z-index: 1; */
+  background-color: var(--heroSectionColor);
+}
+.section2Main {
+  display: flex;
+  justify-content: center;
+}
+
+.section2Left {
+  background-image: url(assets/images/section2Img1.png);
+  height: 390px;
+  min-width: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.section2LeftInner{
+
+}
+
+.section2Left p {
+  margin: 0;
+  color: white;
+}
+.section2Leftp1{
+  font-family: 'GothamMedium';
+  font-size: 20px;
+}
+.section2Leftp2{
+  font-family: 'GothamBlack';
+  font-size: 38px;
+}
+.section2Leftp3{
+  font-family: 'GothamBook';
+  font-size: 16px;
+}
+.section2Right{
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 0 10px 10px 0;
+  padding: 0 80px;
+  background-image: url(assets/images/section2Img2.png);
+  background-position: center;
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.section2RightPara{
+  /* width: 80%; */
+  min-width: 310px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .desktopHeader {
+    display: none;
+  }
+
+  .imageBack {
+    width: 488px;
+  }
+
+  .mobileHeader {
+    display: block;
+  }
+
+  .imageFront {
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .homeLeft {
+    width: 100%;
+  }
+
+  .homePageInner {
+    position: relative;
+  }
+
+  .homeRight {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+  }
+  .section2Right{
+    padding: 30px 60px;
+    border-radius: 0 0 10px 10px;
+  }
+  .section2Main{
+    flex-direction: column;
+    
+  }
+}
