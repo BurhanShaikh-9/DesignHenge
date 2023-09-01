@@ -2,13 +2,11 @@ import React, { useState } from 'react'
 import { Container, Button, Offcanvas, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { BsSearch, BsBag } from 'react-icons/bs'
 import { BiUser } from 'react-icons/bi'
-import logoImg from '../../assets/images/logo.png'
+import logoImg from '../assets/images/logo.png'
 import {RxHamburgerMenu} from 'react-icons/rx'
 
 export const Header = () => {
-
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 

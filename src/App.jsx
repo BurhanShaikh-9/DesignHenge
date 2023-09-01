@@ -1,20 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Header } from './webPage/component/header';
-import { HomePage } from './webPage/pages/homePage';
-
-
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Header } from "./component/header";
+import { HomePage } from "./pages/homePage";
+import {Footer} from './component/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <Header/>
-      <HomePage/>
-    </>
-  )
+    return (
+        <>
+            <Header />
+            <HomePage />
+            <Footer/>
+        </>
+    );
 }
 
-export default App
+export default App;
