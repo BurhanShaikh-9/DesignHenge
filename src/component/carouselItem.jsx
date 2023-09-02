@@ -17,7 +17,7 @@ export const CarouselItem = (props) => {
             <span className='price'>{props.productPrice}</span>
           </div>
           <div className="buttonContainer">
-            <button className='themeBtn'><i class="ri-shopping-bag-line"></i>ADD TO CART</button>
+            <button className='themeBtn'><i className="ri-shopping-bag-line"></i>ADD TO CART</button>
           </div>
       </div>
     </div>

@@ -110,7 +110,7 @@ export const HomePage = () => {
                             <div className="sliderContainer">
                                 <CarouselComponent>
                                     {productData.map((item, keyId) => (
-                                        <CarouselItem keyId {...item} />
+                                        <CarouselItem key={keyId} {...item} />
                                     ))}
                                 </CarouselComponent>
                             </div>
