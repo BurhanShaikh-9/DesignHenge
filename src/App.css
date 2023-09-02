@@ -30,7 +30,7 @@
 
 body,
 html {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -203,6 +203,29 @@ body {
   list-style: none;
   gap: 25px;
   display: flex;
+}
+.lowerHeader nav ul li {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.lowerHeader nav ul li::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  top: 0;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  left: 0;
+  background-color: var(--mainColor);
+  position: absolute;
+  transform: scale(0); /* Initially, set the scale to 0 to hide the dot */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
+.lowerHeader nav ul li:hover::before {
+  transform: scale(1); /* When hovered, scale the dot to its original size */
 }
 
 .lowerHeader nav ul+ul {
@@ -392,18 +415,18 @@ body {
 }
 
 .productCard {
-  padding: 44px 30px 36px;
+  padding: 44px 30px 36px 30px;
   border: 1px solid #dedede;
   border-radius: 5px;
 
   max-width: 280px;
   width: 100%;
-  margin: 0 20px 0;
+  margin: 0 15px 0;
 
   text-align: center;
   position: relative;
 
-  height: 480px;
+  height: 400px;
   transition: all 1s ease;
 }
 
@@ -425,7 +448,7 @@ div:has(>.productCard) {
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   transform: translateY(10px);
-  height: 530px;
+  height: 480px;
 }
 
 .productCard:hover .buttonContainer {
@@ -435,7 +458,7 @@ div:has(>.productCard) {
 
 
 .productCard .buttonContainer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 30px;
   margin-inline: auto;
   text-align: center;
@@ -495,6 +518,10 @@ div:has(>.productCard) {
   font-weight: 600;
   color: #3e8e07;
 }
+.item{
+  display: flex;
+  justify-content: center;
+}
 
 .productCard .themeBtn {
   display: flex;
@@ -525,6 +552,7 @@ div:has(>.productCard) {
 .util__panel {
   display: flex;
   justify-content: space-between;
+  overflow-x: auto;
 }
 
 /**----- SHOP SLIDER SECTION END  ------*/
@@ -533,18 +561,30 @@ div:has(>.productCard) {
 
 .featureSection{
   background-image: url(assets/images/section4Background.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 570px;
 }
 
 .featureSection .container {
   max-width: 1400px;
 }
-
+.featureSection{
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+}
 .featureMain {
-  padding: 125px 0;
-  background: rgba(0, 0, 0, 0.19);
+  /* padding: 125px 0;
+  background: rgba(0, 0, 0, 0.19); */
+}
+.featureSectionInner{
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+  /* align-items: center; */
 }
 
 .featureMain .section__text {
@@ -561,6 +601,7 @@ div:has(>.productCard) {
 .featureCard {
   max-width: 330px;
   width: 100%;
+  min-width: 200px;
 }
 
 .featureCard .img__wrap {
@@ -574,6 +615,11 @@ div:has(>.productCard) {
   text-transform: capitalize;
   letter-spacing: .5px;
   font-weight: 600;
+}
+.utilPanels{
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .featureCard p {
@@ -693,8 +739,20 @@ footer .container {
   font-family: var(--ff-gotham-500);
   font-size: 18px;
 }
-
+.footerPayment .imgWrapInner{
+  gap: 10px;
+  display: flex;
+}
+.footerPayment{
+  font-family: var(--ff-gotham-500);
+  display: flex;
+  gap: 10px;
+}
 /**----- FOOTER END  ------*/
+
+.slick-arrow{
+  display: none !important;
+}
 
 
 @media only screen and (max-width: 1200px) {

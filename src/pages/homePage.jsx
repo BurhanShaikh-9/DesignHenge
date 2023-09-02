@@ -98,92 +98,97 @@ export const HomePage = () => {
             </section>
 
             <section className="shopSliderSection section3">
-                <div className="section__text">
-                    <h4>
-                        Shop by Kratom <span>Capsule</span>
-                    </h4>
-                </div>
-                <div className="shopSliderMain">
-                    <div className="container">
-                        <div className="sliderContainer">
-                            <CarouselComponent>
-                                {/* <CarouselItem {...productData} />
-                                <CarouselItem {...productData} />
-                                <CarouselItem {...productData} />
-                                <CarouselItem {...productData} />
-                            <CarouselItem {...productData} /> */}
-                                {productData.map((item, keyId) => (
-                                    <CarouselItem keyId {...item} />
-                                ))}
-                            </CarouselComponent>
-                        </div>
-                        <div className="sliderButton text-center">
-                            
-                            <a className="themeBtn">ORDER KRATOM NOW</a>
+                <Container>
+
+                    <div className="section__text">
+                        <h4>
+                            Shop by Kratom <span>Capsule</span>
+                        </h4>
+                    </div>
+                    <div className="shopSliderMain">
+                        <div className="container">
+                            <div className="sliderContainer">
+                                <CarouselComponent>
+                                    {productData.map((item, keyId) => (
+                                        <CarouselItem keyId {...item} />
+                                    ))}
+                                </CarouselComponent>
+                            </div>
+                            <div className="sliderButton text-center">
+
+                                <a className="themeBtn">ORDER KRATOM NOW</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </Container>
+
             </section>
 
             <section className="featureSection">
-                <div className="featureMain">
-                    <div className="container">
-                        <div className="section__text">
-                            <h4>Why Kratom</h4>
-                        </div>
-                        <div className="util__panel">
-                            <div className="featureCard">
-                                <div className="img__wrap">
-                                    <img
-                                        src={deliveryImg}
-                                        alt=""
-                                    />
-                                </div>
-                                <h6>Free Delivery</h6>
-                                <p>
-                                    Orders over $100 delivered free via USPS Priority Mail
-                                </p>
-                            </div>
+                <Container>
+                    <div className="featureMain">
+                        <div className="featureSectionInner">
 
-                            <div className="featureCard">
-                                <div className="img__wrap">
-                                    <img
-                                        src={fastDeliveryImg}
-                                        alt=""
-                                    />
-                                </div>
-                                <h6>Fast Delivery</h6>
-                                <p>
-                                    Pay before 1 PM PST, order goes out same biz day.
-                                </p>
+
+                            <div className="section__text">
+                                <h4>Why Kratom</h4>
                             </div>
-                            <div className="featureCard">
-                                <div className="img__wrap">
-                                    <img
-                                        src={supportImg}
-                                        alt=""
-                                    />
+                            <div className="utilPanels">
+                                <div className="featureCard">
+                                    <div className="img__wrap">
+                                        <img
+                                            src={deliveryImg}
+                                            alt=""
+                                        />
+                                    </div>
+                                    <h6>Free Delivery</h6>
+                                    <p>
+                                        Orders over $100 delivered free via USPS Priority Mail
+                                    </p>
                                 </div>
-                                <h6>The Help</h6>
-                                <p>
-                                    Phone & Email support. Your concierge service.
-                                </p>
-                            </div>
-                            <div className="featureCard">
-                                <div className="img__wrap">
-                                    <img
-                                        src={Guarantee}
-                                        alt=""
-                                    />
+
+                                <div className="featureCard">
+                                    <div className="img__wrap">
+                                        <img
+                                            src={fastDeliveryImg}
+                                            alt=""
+                                        />
+                                    </div>
+                                    <h6>Fast Delivery</h6>
+                                    <p>
+                                        Pay before 1 PM PST, order goes out same biz day.
+                                    </p>
                                 </div>
-                                <h6>More Then 9800 Satisfied Reviews</h6>
-                                <p>
-                                    Phone & Email support. Your concierge service.
-                                </p>
+                                <div className="featureCard">
+                                    <div className="img__wrap">
+                                        <img
+                                            src={supportImg}
+                                            alt=""
+                                        />
+                                    </div>
+                                    <h6>The Help</h6>
+                                    <p>
+                                        Phone & Email support. Your concierge service.
+                                    </p>
+                                </div>
+                                <div className="featureCard">
+                                    <div className="img__wrap">
+                                        <img
+                                            src={Guarantee}
+                                            alt=""
+                                        />
+                                    </div>
+                                    <h6>More Then 9800 Satisfied Reviews</h6>
+                                    <p>
+                                        Phone & Email support. Your concierge service.
+                                    </p>
+                                </div>
                             </div>
                         </div>
+
+
                     </div>
-                </div>
+                </Container>
             </section>
         </React.Fragment>
     );

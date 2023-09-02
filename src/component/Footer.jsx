@@ -1,5 +1,12 @@
 import React from "react";
 import logoImg from '../assets/images/logo.png'
+import westernUnion from '../assets/images/westernUnion.png'
+import worldPay from '../assets/images/worldPay.png'
+import payPal from '../assets/images/payPal.png'
+import visa from '../assets/images/Visa.png'
+import masterCard from '../assets/images/masterCard.png'
+import discoverr from '../assets/images/discover.png'
+
 
 export function Footer() {
     return (
@@ -24,16 +31,16 @@ export function Footer() {
                                 <h6 className="footer__heading">Follow Us</h6>
                                 <div className="flex social__icons">
                                     <div>
-                                        <i class="ri-facebook-circle-fill"></i>{" "}
+                                        <i class="ri-facebook-circle-fill"></i>
                                     </div>
                                     <div>
-                                        <i class="ri-twitter-fill"></i>{" "}
+                                        <i class="ri-twitter-fill"></i>
                                     </div>
                                     <div>
-                                        <i class="ri-linkedin-fill"></i>{" "}
+                                        <i class="ri-linkedin-fill"></i>
                                     </div>
                                     <div>
-                                        <i class="ri-twitter-fill"></i>{" "}
+                                        <i class="ri-twitter-fill"></i>
                                     </div>
                                 </div>
                             </div>
@@ -59,15 +66,15 @@ export function Footer() {
                             <div className="footer__address">
                                 <h6 className="footer__heading">Quick Links</h6>
                                 <div>
-                                    <i class="ri-phone-fill"></i>{" "}
+                                    <i class="ri-phone-fill"></i>
                                     <span>123- 365-7890</span>
                                 </div>
                                 <div>
-                                    <i class="ri-mail-fill"></i>{" "}
+                                    <i class="ri-mail-fill"></i>
                                     <span>support@youdomain.com</span>
                                 </div>
                                 <div>
-                                    <i class="ri-map-pin-fill"></i>{" "}
+                                    <i class="ri-map-pin-fill"></i>
                                     <span>locaion CA 9857</span>
                                 </div>
                             </div>
@@ -104,8 +111,16 @@ export function Footer() {
                             <p className="copyright">
                                 Copyright @ 2023 All Rights Reserved
                             </p>
-                            <div className="img__wrap">
-                                <img src="src/assets/images/footer-icons.png" />
+                            <div className="footerPayment">
+                               <span>Payment Method</span>
+                               <div className="imgWrapInner">
+                                    <img src={worldPay} alt="" />
+                                    <img src={westernUnion} alt="" />
+                                    <img src={visa} alt="" />
+                                    <img src={discoverr} alt="" />
+                                    <img src={payPal} alt="" />
+                                    <img src={masterCard} alt="" />
+                               </div>
                             </div>
                         </div>
                     </div>
