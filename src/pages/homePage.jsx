@@ -16,14 +16,14 @@ export const HomePage = () => {
 
 
     const productData = [
-        { itemImg: "src/assets/images/card-img-1.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
-        { itemImg: "src/assets/images/card-img-2.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
-        { itemImg: "src/assets/images/card-img-3.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
-        { itemImg: "src/assets/images/card-img-4.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
-        { itemImg: "src/assets/images/card-img-5.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
-        { itemImg: "src/assets/images/card-img-1.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
-        { itemImg: "src/assets/images/card-img-2.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
-        { itemImg: "src/assets/images/card-img-3.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "../assets/images/card-img-1.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "../assets/images/card-img-2.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "../assets/images/card-img-3.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "../assets/images/card-img-4.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "../assets/images/card-img-5.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "../assets/images/card-img-1.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "../assets/images/card-img-2.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "../assets/images/card-img-3.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
     ]
 
     return (

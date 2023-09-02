@@ -37,11 +37,11 @@ body {
   font-family: 'GothamBook' !important;
 }
 
-.container {
+/* .container {
   max-width: 1170px;
   padding-inline: 15px;
   margin-inline: auto;
-}
+} */
 
 
 .themeBtn {
@@ -328,7 +328,7 @@ body {
 .section2Left {
   background-image: url(assets/images/section2Img1.png);
   height: 390px;
-  min-width: 500px;
+  min-width: 286px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -375,7 +375,7 @@ body {
 }
 
 .section2RightPara {
-  min-width: 310px;
+  min-width: 260px;
 }
 
 
@@ -410,9 +410,9 @@ body {
   transform: translateX(-50%);
 }
 
-.shopSliderSection .container {
+/* .shopSliderSection .container {
   max-width: 1620px;
-}
+} */
 
 .productCard {
   padding: 44px 30px 36px 30px;
@@ -567,9 +567,9 @@ div:has(>.productCard) {
   height: 570px;
 }
 
-.featureSection .container {
+/* .featureSection .container {
   max-width: 1400px;
-}
+} */
 .featureSection{
   display: flex;
   justify-content: center;
@@ -644,9 +644,9 @@ footer p {
   font-family: var(--ff-gotham-400);
 }
 
-footer .container {
+/* footer .container {
   max-width: 1500px;
-}
+} */
 
 .top__footer {
   margin-bottom: 60px;
@@ -747,6 +747,13 @@ footer .container {
   font-family: var(--ff-gotham-500);
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.imgWrapInner{
+  display: flex;
+  flex-wrap: wrap;
 }
 /**----- FOOTER END  ------*/
 
@@ -822,7 +829,7 @@ footer * {
   }
 
   .section2Right {
-    padding: 30px 60px;
+    padding: 30px 18px;
     border-radius: 0 0 10px 10px;
   }
 
