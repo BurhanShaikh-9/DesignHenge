@@ -2,7 +2,6 @@
   --mainColor: #7ac118;
   --heroSectionColor: #eaf2e1;
 
-
   --ff-myriad-400: 'MyriadRegular';
   --ff-gotham-900: 'GothamBlack';
   --ff-gotham-500: 'GothamMedium';
@@ -10,8 +9,8 @@
 }
 
 @font-face {
-  font-family: 'MyriadRegular';
-  src: url('assets/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+  font-family: 'GothamBold';
+  src: url('assets/fonts/Gotham-Bold.otf') format('opentype');
 }
 
 @font-face {
@@ -180,7 +179,10 @@ body {
   right: 3px;
   font-size: 12px;
 }
-
+.featureCard h6{
+  font-family: 'GothamBook';
+  font-size: 20px;
+}
 .logo img {
   width: 200px;
 }
@@ -420,8 +422,8 @@ div:has(>.productCard) {
 }
 
 .productCard:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   transform: translateY(10px);
   height: 530px;
 }
@@ -453,6 +455,12 @@ div:has(>.productCard) {
 
 .productCard .img__wrap {
   margin-bottom: 20px;
+}
+.productCard .img__wrap img{
+  
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
 }
 
 .productCard h6 {
@@ -523,12 +531,19 @@ div:has(>.productCard) {
 
 /**----- FEATURE SECTION START  ------*/
 
+.featureSection{
+  background-image: url(assets/images/section4Background.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .featureSection .container {
   max-width: 1400px;
 }
 
 .featureMain {
-  padding: 250px 0;
+  padding: 125px 0;
   background: rgba(0, 0, 0, 0.19);
 }
 

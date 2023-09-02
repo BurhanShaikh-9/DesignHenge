@@ -1,4 +1,5 @@
 import React from "react";
+import logoImg from '../assets/images/logo.png'
 
 export function Footer() {
     return (
@@ -10,7 +11,7 @@ export function Footer() {
                             <div className="footer__text">
                                 <div className="img__wrap">
                                     <img
-                                        src="src/assets/images/footer-logo.png"
+                                        src={logoImg}
                                         alt=""
                                     />
                                 </div>

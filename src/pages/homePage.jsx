@@ -5,39 +5,26 @@ import heroImageMain from "../assets/images/heroSectionImage.png";
 import section2Img1 from "../assets/images/section2Img1.png";
 import { CarouselComponent } from "../component/carouselComponent";
 import { CarouselItem } from "../component/carouselItem";
+import deliveryImg from '../assets/images/delivery.png'
+import supportImg from '../assets/images/support.png'
+import Guarantee from '../assets/images/guarantee.png'
+import fastDeliveryImg from '../assets/images/fastDelivery.png'
+
 
 export const HomePage = () => {
-    // const settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 3000,
-    //     responsive: [
-    //         {
-    //             breakpoint: 768,
-    //             settings: {
-    //                 slidesToShow: 2,
-    //             },
-    //         },
-    //         {
-    //             breakpoint: 480,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //             },
-    //         },
-    //     ],
-    // };
 
-    const productData = {
-        itemImg: "src/assets/images/card-img-1.png",
-        itemTitle: "Lorem Ipsem is Simply Dummy Text",
-        itemRating: "src/assets/images/rating.png",
-        discountedPrice: "$88.00",
-        productPrice: "$67.00",
-    };
+
+
+    const productData = [
+        { itemImg: "src/assets/images/card-img-1.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "src/assets/images/card-img-2.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "src/assets/images/card-img-3.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "src/assets/images/card-img-4.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "src/assets/images/card-img-5.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "src/assets/images/card-img-1.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "src/assets/images/card-img-2.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+        { itemImg: "src/assets/images/card-img-3.png", itemTitle: "Lorem Ipsem is Simply Dummy Text", itemRating: "src/assets/images/rating.png", discountedPrice: "$88.00", productPrice: "$67.00", },
+    ]
 
     return (
         <React.Fragment>
@@ -120,15 +107,18 @@ export const HomePage = () => {
                     <div className="container">
                         <div className="sliderContainer">
                             <CarouselComponent>
+                                {/* <CarouselItem {...productData} />
                                 <CarouselItem {...productData} />
                                 <CarouselItem {...productData} />
                                 <CarouselItem {...productData} />
-                                <CarouselItem {...productData} />
-                                <CarouselItem {...productData} />
-                                <CarouselItem {...productData} />
+                            <CarouselItem {...productData} /> */}
+                                {productData.map((item, keyId) => (
+                                    <CarouselItem keyId {...item} />
+                                ))}
                             </CarouselComponent>
                         </div>
                         <div className="sliderButton text-center">
+                            
                             <a className="themeBtn">ORDER KRATOM NOW</a>
                         </div>
                     </div>
@@ -145,54 +135,50 @@ export const HomePage = () => {
                             <div className="featureCard">
                                 <div className="img__wrap">
                                     <img
-                                        src="src/assets/images/section-4-1.png"
+                                        src={deliveryImg}
                                         alt=""
                                     />
                                 </div>
                                 <h6>Free Delivery</h6>
                                 <p>
-                                    Orders From over $100 delivered via USPS
-                                    Priority Mal
+                                    Orders over $100 delivered free via USPS Priority Mail
                                 </p>
                             </div>
 
                             <div className="featureCard">
                                 <div className="img__wrap">
                                     <img
-                                        src="src/assets/images/section-4-1.png"
+                                        src={fastDeliveryImg}
                                         alt=""
                                     />
                                 </div>
-                                <h6>Free Delivery</h6>
+                                <h6>Fast Delivery</h6>
                                 <p>
-                                    Orders From over $100 delivered via USPS
-                                    Priority Mal
+                                    Pay before 1 PM PST, order goes out same biz day.
                                 </p>
                             </div>
                             <div className="featureCard">
                                 <div className="img__wrap">
                                     <img
-                                        src="src/assets/images/section-4-1.png"
+                                        src={supportImg}
                                         alt=""
                                     />
                                 </div>
-                                <h6>Free Delivery</h6>
+                                <h6>The Help</h6>
                                 <p>
-                                    Orders From over $100 delivered via USPS
-                                    Priority Mal
+                                    Phone & Email support. Your concierge service.
                                 </p>
                             </div>
                             <div className="featureCard">
                                 <div className="img__wrap">
                                     <img
-                                        src="src/assets/images/section-4-1.png"
+                                        src={Guarantee}
                                         alt=""
                                     />
                                 </div>
-                                <h6>Free Delivery</h6>
+                                <h6>More Then 9800 Satisfied Reviews</h6>
                                 <p>
-                                    Orders From over $100 delivered via USPS
-                                    Priority Mal
+                                    Phone & Email support. Your concierge service.
                                 </p>
                             </div>
                         </div>

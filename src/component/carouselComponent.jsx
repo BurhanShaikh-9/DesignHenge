@@ -13,7 +13,7 @@ export const CarouselComponent = ({ children }) => {
         speed: 500,
         // slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         responsive: [
             {
@@ -23,7 +23,7 @@ export const CarouselComponent = ({ children }) => {
                 },
             },
             {
-                breakpoint: 480,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
                 },
